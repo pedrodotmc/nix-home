@@ -21,6 +21,7 @@ in
     kubectl
     kubernetes-helm
     fluxctl
+    istioctl
     gitlab-runner
   ];
 
