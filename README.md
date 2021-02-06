@@ -41,12 +41,10 @@ ssh-keygen -t ecdsa -b 521 -C "pedrodotmc@gmail.com"
 git clone git@github.com:pedrodotmc/nix-home.git
 ```
 
-4. Update `nixHomeRepo` variable in `home.nix` file.
+4. Update `nixHomeRepo` variable in [home.nix](user/home.nix) file.
 
 5. Run `start.sh` script:
 
 ```bash
 ./start.sh
 ```
-
-4. Look for manual steps in `home.nix` and perform it manually :)
