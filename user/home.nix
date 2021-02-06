@@ -33,7 +33,6 @@ in
     ./zsh.nix
   ];
 
-  vscode.nixHomeRepo = nixHomeRepo;
   repoUpdater.nixHomeRepo = nixHomeRepo;
 
   ## Keybase services

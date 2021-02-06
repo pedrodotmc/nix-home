@@ -1,42 +1,36 @@
-{ lib, config, ... }:
-
-with lib;
-
+{ config, ... }:
+let
+  vscodeFile = "${config.home.homeDirectory}/.config/nixpkgs/files/vscode_extensions";
+in
 {
-  options.vscode.nixHomeRepo = mkOption {
-    type = types.str;
+  programs.vscode = {
+    enable = true;
+    keybindings = [
+      {
+        key = "ctrl+alt+g";
+        command = "workbench.action.files.saveFiles";
+      }
+    ];
   };
-
-  config = {
-    programs.vscode = {
-      enable = true;
-      keybindings = [
-        {
-          key = "ctrl+alt+g";
-          command = "workbench.action.files.saveFiles";
-        }
-      ];
-    };
-    systemd.user = {
-      services = {
-        vscode-extension-list-updater = {
-          Unit.Description = "Service to update the VSCode extension list";
-          Service = {
-            Type = "simple";
-            ExecStart = "/bin/sh -c 'code --list-extensions > ${config.vscode.nixHomeRepo}/files/vscode_extensions'";
-          };
-          Install.WantedBy = [ "default.target" ];
+  systemd.user = {
+    services = {
+      vscode-extension-list-updater = {
+        Unit.Description = "Service to update the VSCode extension list";
+        Service = {
+          Type = "simple";
+          ExecStart = "/bin/sh -c 'code --list-extensions > ${vscodeFile}'";
         };
+        Install.WantedBy = [ "default.target" ];
       };
-      timers = {
-        vscode-extension-list-updater = {
-          Unit.Description = "Timer to update the VSCode extension list";
-          Timer = {
-            OnBootSec = "2min";
-            OnUnitActiveSec = "1d";
-          };
-          Install.WantedBy = [ "timers.target" ];
+    };
+    timers = {
+      vscode-extension-list-updater = {
+        Unit.Description = "Timer to update the VSCode extension list";
+        Timer = {
+          OnBootSec = "2min";
+          OnUnitActiveSec = "1d";
         };
+        Install.WantedBy = [ "timers.target" ];
       };
     };
   };

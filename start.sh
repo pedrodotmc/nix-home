@@ -1,8 +1,8 @@
 #!/run/current-system/sw/bin/bash
 
-# Copy home.nix file
-mkdir -p ~/.config/nixpkgs
+mkdir -p ~/.config/nixpkgs/files
 cp -l -f user/*.nix ~/.config/nixpkgs
+cp -l -f files/* ~/.config/nixpkgs/files
 
 # Run home installation
 home-manager switch

@@ -1,3 +1,7 @@
+{ config, ... }:
+let
+  tmuxStarter = "${config.home.homeDirectory}/.config/nixpkgs/files/tmux-starter.sh";
+in
 {
   gtk.theme.name = "Adwaita-dark";
   dconf.settings = {
@@ -10,7 +14,7 @@
       backspace-binding = "ascii-delete";
       cursor-blink-mode = "system";
       cursor-shape = "block";
-      custom-command = "tmux set-option -g history-limit 5000 \\; set -g mouse on \\; new -AsPedro";
+      custom-command = "${tmuxStarter}";
       delete-binding = "delete-sequence";
       font = "Inconsolata 15";
       login-shell = false;
