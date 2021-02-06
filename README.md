@@ -48,3 +48,5 @@ git clone git@github.com:pedrodotmc/nix-home.git
 ```bash
 ./start.sh
 ```
+
+# Step by step for Debian (coming soon)
