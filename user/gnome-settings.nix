@@ -12,7 +12,7 @@
       cursor-shape = "block";
       custom-command = "tmux set-option -g history-limit 5000 \\; set -g mouse on \\; new -AsPedro";
       delete-binding = "delete-sequence";
-      font = "Inconsolata 14";
+      font = "Inconsolata 15";
       login-shell = false;
       scrollback-lines = "10000";
       scrollbar-policy = "never";

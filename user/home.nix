@@ -33,7 +33,7 @@ in
   ];
 
   vscode.nixHomeRepo = nixHomeRepo;
-  homeUpdater.nixHomeRepo = nixHomeRepo;
+  repoUpdater.nixHomeRepo = nixHomeRepo;
 
   ## Keybase services
   services.kbfs.enable = true;
