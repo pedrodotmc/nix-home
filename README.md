@@ -43,10 +43,10 @@ git clone git@github.com:pedrodotmc/nix-home.git
 
 4. Update `nixHomeRepo` variable in [home.nix](user/home.nix) file.
 
-5. Run `start.sh` script:
+5. Run `apply.sh` script:
 
 ```bash
-./start.sh
+./apply.sh
 ```
 
 # Step by step for Debian (coming soon)

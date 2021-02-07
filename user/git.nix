@@ -1,4 +1,7 @@
 {
+  ####################
+  # Git configuration
+  ####################
   programs.git = {
     enable = true;
     userName = "Pedro Miranda";

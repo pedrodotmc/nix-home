@@ -9,11 +9,15 @@ let
 in
 {
 
+  #################################
+  # Packages to install in my user
+  #################################
   home.packages = with pkgs; [
     # Apps
     starship tmux
     guake
     keybase keybase-gui
+    bitwarden-cli
     vscode
     spotify
     openfortivpn

@@ -6,11 +6,15 @@ let
   nixRepoUpdaterSh = ".local/bin/nix-repo-updater.sh";
 in
 {
+  # Path where nix-home repo is
   options.repoUpdater.nixHomeRepo = mkOption {
     type = types.str;
   };
 
   config = {
+    ##############################################################
+    # Create script file for updating nix-home repo automatically
+    ##############################################################
     home.file = {
       nix-home-updater = {
         target = nixRepoUpdaterSh;
@@ -24,6 +28,10 @@ in
         executable = true;
       };
     };
+
+    ##############################################
+    # SystemD service for updating repo in GitHub
+    ##############################################
     systemd.user = {
       services = {
         nix-home-updater = {

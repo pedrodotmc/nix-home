@@ -3,6 +3,9 @@ let
   vscodeFile = "${config.home.homeDirectory}/.config/nixpkgs/files/vscode_extensions";
 in
 {
+  #######################
+  # VSCode configuration
+  #######################
   programs.vscode = {
     enable = true;
     keybindings = [
@@ -12,6 +15,10 @@ in
       }
     ];
   };
+
+  #######################################################
+  # SystemD service for updating VSCode's extension list
+  #######################################################
   systemd.user = {
     services = {
       vscode-extension-list-updater = {

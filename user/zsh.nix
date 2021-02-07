@@ -3,6 +3,9 @@
   ...
 }:
 {
+  ##############################
+  # Configuration for XSH shell
+  ##############################
   programs.zsh = {
     enable = true;
     enableAutosuggestions = true;
@@ -15,6 +18,7 @@
     shellAliases = {
       tf = "terraform";
       gcs = "git commit -S -s";
+      cpbuff = "tmux show-buffer | xclip -sel clip -i";
     };
     plugins = [
       {
@@ -72,6 +76,9 @@
     };
   };
 
+  ####################################
+  # Configuration for starship prompt
+  ####################################
   programs.starship = {
     enable = true;
     enableZshIntegration = true;

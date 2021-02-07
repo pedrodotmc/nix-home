@@ -4,6 +4,10 @@ let
 in
 {
   gtk.theme.name = "Adwaita-dark";
+
+  #######################
+  # GNOME Dconf settings
+  #######################
   dconf.settings = {
     "org/gnome/terminal/legacy/profiles:" = {
       default = "48721fd3-e405-4ec9-8008-84652c9736e3";

@@ -79,7 +79,7 @@
     brave
 
     # Development packages
-    git
+    git git-crypt
     docker
     google-cloud-sdk
   ];
