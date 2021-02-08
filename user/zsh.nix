@@ -152,7 +152,7 @@
       gcloud = {
         format = "[$symbol $project]($style) ";
         symbol = "🇬️ ";
-        style = "yellow";
+        style = "#e6b800";
       };
       git_branch = {
         style = "#ff3399";
@@ -192,7 +192,7 @@
       };
       kubernetes = {
         disabled = false;
-        format = "[⛵ $context](#0066ff) ";
+        format = "[⛵ $context](#0099ff) ";
       };
       nix_shell = {
         disabled = false;

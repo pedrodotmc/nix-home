@@ -29,7 +29,7 @@ passwd pedrodotmc
 gpg --full-generate-key
 ```
 
-2. Generate a new SSH key pair and configure it in GitHub:
+2. Generate a new SSH key pair (or import an existing one) and configure it in GitHub:
 
 ```bash
 ssh-keygen -t ecdsa -b 521 -C "pedrodotmc@gmail.com"
