@@ -18,10 +18,12 @@ in
     starship tmux
     keybase keybase-gui
     brave
-    vscode
     spotify
     openfortivpn
     bitwarden-cli
+    # Development
+    vscode
+    rustup
     # Infrastructure tools
     kubectl
     kubernetes-helm

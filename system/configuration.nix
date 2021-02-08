@@ -70,6 +70,7 @@
   environment.systemPackages = with pkgs; [
     # System packages
     home-manager
+    gcc
     xclip
     gnome3.gnome-tweaks
     gnupg pinentry pinentry-gnome
