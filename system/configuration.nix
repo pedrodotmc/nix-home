@@ -69,7 +69,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     # System packages
-    zsh
     home-manager
     xclip
     gnome3.gnome-tweaks
@@ -88,13 +87,6 @@
     fira-code
     fira-code-symbols
   ];
-
-  programs.zsh = {
-    enable = true;
-    promptInit = ''
-      export CLOUD_SDK_HOME="${pkgs.google-cloud-sdk}"
-    '';
-  };
 
   programs.dconf.enable = true;
 

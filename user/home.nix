@@ -14,7 +14,7 @@ in
   #################################
   home.packages = with pkgs; [
     # Apps
-    oh-my-zsh zsh-syntax-highlighting zsh-you-should-use
+    zsh oh-my-zsh
     starship tmux
     keybase keybase-gui
     brave

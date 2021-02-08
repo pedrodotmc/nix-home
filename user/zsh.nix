@@ -18,6 +18,7 @@ in
     initExtra = ''
       eval "$(starship init zsh)"
       export TERM=xterm-256color
+      export CLOUD_SDK_HOME="${pkgs.google-cloud-sdk}"
       source "$CLOUD_SDK_HOME/google-cloud-sdk/completion.zsh.inc"
     '';
     shellAliases = {
@@ -34,16 +35,17 @@ in
           owner = "zsh-users";
           repo = "zsh-syntax-highlighting";
           rev = "0.7.1";
-          sha256 = "0z6i9wjjklb4lvr7zjhbphibsyx51psv50gm07mbb0kj9058j6kc";
+          sha256 = "03r6hpb5fy4yaakqm3lbf4xcvd408r44jgpv4lnzl9asp4sb9qc0";
         };
       }
       {
         name = "zsh-you-should-use";
+        file = "you-should-use.plugin.zsh";
         src = pkgs.fetchFromGitHub {
           owner = "MichaelAquilina";
           repo = "zsh-you-should-use";
           rev = "1.7.3";
-          sha256 = "0z6i9wjjklb4lvr7zjhbphibsyx51psv50gm07mbb0kj9058j6kc";
+          sha256 = "1dz48rd66priqhxx7byndqhbmlwxi1nfw8ik25k0z5k7k754brgy";
         };
       }
       {
