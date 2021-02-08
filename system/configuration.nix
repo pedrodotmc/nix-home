@@ -69,14 +69,11 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     # System packages
-    zsh oh-my-zsh
+    zsh
     home-manager
     xclip
     gnome3.gnome-tweaks
     gnupg pinentry pinentry-gnome
-
-    # Apps
-    brave
 
     # Development packages
     git git-crypt

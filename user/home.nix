@@ -14,13 +14,14 @@ in
   #################################
   home.packages = with pkgs; [
     # Apps
+    oh-my-zsh zsh-syntax-highlighting zsh-you-should-use
     starship tmux
-    guake
     keybase keybase-gui
-    bitwarden-cli
+    brave
     vscode
     spotify
     openfortivpn
+    bitwarden-cli
     # Infrastructure tools
     kubectl
     kubernetes-helm

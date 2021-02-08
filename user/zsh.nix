@@ -29,6 +29,24 @@ in
     };
     plugins = [
       {
+        name = "zsh-syntax-highlighting";
+        src = pkgs.fetchFromGitHub {
+          owner = "zsh-users";
+          repo = "zsh-syntax-highlighting";
+          rev = "0.7.1";
+          sha256 = "0z6i9wjjklb4lvr7zjhbphibsyx51psv50gm07mbb0kj9058j6kc";
+        };
+      }
+      {
+        name = "zsh-you-should-use";
+        src = pkgs.fetchFromGitHub {
+          owner = "MichaelAquilina";
+          repo = "zsh-you-should-use";
+          rev = "1.7.3";
+          sha256 = "0z6i9wjjklb4lvr7zjhbphibsyx51psv50gm07mbb0kj9058j6kc";
+        };
+      }
+      {
         name = "zsh-nix-shell";
         file = "nix-shell.plugin.zsh";
         src = pkgs.fetchFromGitHub {
@@ -145,10 +163,10 @@ in
         "$character"
       ];
       add_newline = false;
-      character = {
-        error_symbol = "[➜](bold red)";
-        success_symbol = "[➜](bold green)";
-      };
+      # character = {
+      #   error_symbol = "[➜](bold red)";
+      #   success_symbol = "[➜](bold green)";
+      # };
       directory = {
         style = "cyan";
         truncation_length = 8;
