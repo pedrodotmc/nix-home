@@ -1,6 +1,6 @@
 { config, ... }:
 let
-  vscodeFile = "${config.home.homeDirectory}/.config/nixpkgs/files/vscode_extensions";
+  vscodeFile = "${config.home.homeDirectory}/.config/nixpkgs/files/vscode/extensions";
 in
 {
   #######################

@@ -49,4 +49,10 @@ git clone git@github.com:pedrodotmc/nix-home.git
 ./apply.sh
 ```
 
+6. Uncrypt locked files running:
+
+```bash
+git-crypt unlock <KEY_FILE>
+```
+
 # Step by step for Debian (coming soon)

@@ -1,7 +1,12 @@
 {
+  config,
   pkgs,
   ...
 }:
+let 
+  tmuxGitHub = "${config.home.homeDirectory}/.config/nixpkgs/files/tmux/github.sh";
+  tmuxWork = "${config.home.homeDirectory}/.config/nixpkgs/files/tmux/work.sh";
+in
 {
   ##############################
   # Configuration for XSH shell
@@ -19,6 +24,8 @@
       tf = "terraform";
       gcs = "git commit -S -s";
       cpbuff = "tmux show-buffer | xclip -sel clip -i";
+      tmux_github = tmuxGitHub;
+      tmux_work = tmuxWork;
     };
     plugins = [
       {
@@ -168,11 +175,11 @@
         format = "[\\($state( $progress_current of $progress_total)\\)]($style) ";
       };
       git_status = {
-        ahead = "🠕$count";
-        behind = "🠗$count";
+        ahead = "↑$count";
+        behind = "↓$count";
         conflicted = "!";
         deleted = "×";
-        diverged = "🠕$ahead_count 🠗$behind_count";
+        diverged = "↑$ahead_count ↓$behind_count";
         format = "([\\[$all_status\\]\\[$ahead_behind\\]]($style) )";
         modified = "~";
         style = "#ff3399";
@@ -207,7 +214,7 @@
         format = "[⚙️ $version](#f03c00) ";
       };
       terraform = {
-        format = "[🏎  $workspace]($style) ";
+        format = "[🇹🇫  $workspace]($style) ";
         style = "#7c65ef";
       };
       username = {
