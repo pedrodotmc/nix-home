@@ -35,7 +35,8 @@ in
         Unit.Description = "Timer to update the VSCode extension list";
         Timer = {
           OnBootSec = "2min";
-          OnUnitActiveSec = "1d";
+          OnCalendar = "*-*-* 19:00:00";
+          Persistent = true;
         };
         Install.WantedBy = [ "timers.target" ];
       };

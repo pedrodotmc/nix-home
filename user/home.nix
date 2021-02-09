@@ -21,6 +21,7 @@ in
     spotify
     openfortivpn
     bitwarden-cli
+    zoom-us
     # Development
     vscode
     rustup

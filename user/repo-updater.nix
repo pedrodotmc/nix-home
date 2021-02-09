@@ -48,7 +48,8 @@ in
           Unit.Description = "Timer to update nix-home repository";
           Timer = {
             OnBootSec = "5min";
-            OnUnitActiveSec = "1d";
+            OnCalendar = "*-*-* 20:00:00";
+            Persistent = true;
           };
           Install.WantedBy = [ "timers.target" ];
         };
