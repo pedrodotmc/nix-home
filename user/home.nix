@@ -22,6 +22,7 @@ in
     openfortivpn
     bitwarden-cli
     zoom-us
+    jq
     # Development
     vscode
     rustup

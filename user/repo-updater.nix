@@ -47,7 +47,6 @@ in
         nix-home-updater = {
           Unit.Description = "Timer to update nix-home repository";
           Timer = {
-            OnBootSec = "5min";
             OnCalendar = "*-*-* 20:00:00";
             Persistent = true;
           };

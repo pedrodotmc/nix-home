@@ -34,7 +34,6 @@ in
       vscode-extension-list-updater = {
         Unit.Description = "Timer to update the VSCode extension list";
         Timer = {
-          OnBootSec = "2min";
           OnCalendar = "*-*-* 19:00:00";
           Persistent = true;
         };
