@@ -23,6 +23,7 @@ in
     bitwarden-cli
     zoom-us
     jq
+    zip unzip
     # Development
     vscode
     rustup
@@ -31,6 +32,7 @@ in
     kubernetes-helm
     fluxctl
     istioctl
+    velero
     gitlab-runner
   ];
 
