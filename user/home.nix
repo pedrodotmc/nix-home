@@ -22,6 +22,7 @@ in
     openfortivpn
     bitwarden-cli
     zoom-us
+    element-desktop
     jq
     zip unzip
     # Development
