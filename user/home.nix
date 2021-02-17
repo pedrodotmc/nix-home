@@ -17,6 +17,7 @@ in
     zsh oh-my-zsh
     starship tmux
     keybase keybase-gui
+    google-chrome
     brave
     spotify
     openfortivpn
