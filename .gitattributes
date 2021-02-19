@@ -1,2 +1,3 @@
 files/tmux/work.sh filter=git-crypt diff=git-crypt
+files/tmux/work_ta.sh filter=git-crypt diff=git-crypt
 .gitattributes !filter !diff

@@ -4,6 +4,9 @@
 
 { config, pkgs, ... }:
 
+let 
+  homeDirectory = "/home/pedrodotmc";
+in
 {
   imports =
     [ # Include the results of the hardware scan.
@@ -59,7 +62,7 @@
   };
   users.users.pedrodotmc = {
     isNormalUser = true;
-    home = "/home/pedrodotmc";
+    home = homeDirectory;
     extraGroups = [ "wheel" "docker" ]; # Enable ‘sudo’ for the user.
     shell = pkgs.zsh;
   };
@@ -79,6 +82,9 @@
     git git-crypt
     docker
     google-cloud-sdk
+    aws
+    nodejs
+    nodePackages.npm
   ];
 
   # Fonts
@@ -94,6 +100,13 @@
   programs.gnupg.agent = {
     enable = true;
     pinentryFlavor = "gnome3";
+  };
+
+  programs.npm = {
+    enable = true;
+    npmrc = ''
+    prefix = ${homeDirectory}/.npmpackages
+    '';
   };
 
   # List services that you want to enable:

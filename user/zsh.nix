@@ -6,6 +6,7 @@
 let 
   tmuxGitHub = "${config.home.homeDirectory}/.config/nixpkgs/files/tmux/github.sh";
   tmuxWork = "${config.home.homeDirectory}/.config/nixpkgs/files/tmux/work.sh";
+  tmuxWorkTA = "${config.home.homeDirectory}/.config/nixpkgs/files/tmux/work_ta.sh";
 in
 {
   ##############################
@@ -27,6 +28,7 @@ in
       cpbuff = "tmux show-buffer | xclip -sel clip -i";
       tmux_github = tmuxGitHub;
       tmux_work = tmuxWork;
+      tmux_work_ta = tmuxWorkTA;
     };
     plugins = [
       {

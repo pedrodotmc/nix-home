@@ -26,9 +26,10 @@ in
     element-desktop
     jq
     zip unzip
+    safeeyes
     # Development
     vscode
-    rustup
+    rustup  
     # Infrastructure tools
     kubectl
     kubernetes-helm
