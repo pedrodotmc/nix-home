@@ -77,12 +77,10 @@ in
     xclip
     gnome3.gnome-tweaks
     gnupg pinentry pinentry-gnome
-
     # Development packages
     git git-crypt
     docker
     google-cloud-sdk
-    aws
     nodejs
     nodePackages.npm
   ];

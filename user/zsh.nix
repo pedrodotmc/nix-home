@@ -3,7 +3,7 @@
   pkgs,
   ...
 }:
-let 
+let
   tmuxGitHub = "${config.home.homeDirectory}/.config/nixpkgs/files/tmux/github.sh";
   tmuxWork = "${config.home.homeDirectory}/.config/nixpkgs/files/tmux/work.sh";
   tmuxWorkTA = "${config.home.homeDirectory}/.config/nixpkgs/files/tmux/work_ta.sh";
@@ -167,10 +167,11 @@ in
         "$character"
       ];
       add_newline = false;
-      # character = {
-      #   error_symbol = "[➜](bold red)";
-      #   success_symbol = "[➜](bold green)";
-      # };
+      aws = {
+        format = "[$symbol $profile(\($region\))]($style) ";
+        style = "#e07700";
+        symbol = "🅰 ";
+      };
       directory = {
         style = "cyan";
         truncation_length = 8;

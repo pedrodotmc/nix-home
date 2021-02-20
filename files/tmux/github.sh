@@ -9,6 +9,9 @@ tmux send-keys -t 'github_com' 'cd ~/Repositories/github.com' C-m 'clear' C-m
 tmux new-window -n 'adaptoid'
 tmux send-keys -t 'adaptoid' 'cd ~/Repositories/github.com/pedrodotmc/adaptoid' C-m 'clear' C-m
 
+tmux new-window -n 'fast-cluster'
+tmux send-keys -t 'fast-cluster' 'cd ~/Repositories/github.com/pedrodotmc/fast-cluster' C-m 'clear' C-m
+
 tmux new-window -n 'nix-home'
 tmux send-keys -t 'nix-home' 'cd ~/Repositories/github.com/pedrodotmc/nix-home' C-m 'clear' C-m
 

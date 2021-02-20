@@ -29,14 +29,17 @@ in
     safeeyes
     # Development
     vscode
-    rustup  
+    rustup
     # Infrastructure tools
+    kube3d
     kubectl
     kubernetes-helm
     fluxctl
     istioctl
     velero
     gitlab-runner
+    awscli2
+    aws-okta
   ];
 
   imports = [
