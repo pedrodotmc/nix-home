@@ -234,10 +234,10 @@ in
         format = "[📦 $version](208) ";
       };
       rust = {
-        format = "[⚙️ $version](#f03c00) ";
+        format = "[⚙️  $version](#f03c00) ";
       };
       terraform = {
-        format = "[🇹🇫  $workspace]($style) ";
+        format = "[💥 $workspace]($style) ";
         style = "#7c65ef";
       };
       username = {
