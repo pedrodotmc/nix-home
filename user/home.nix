@@ -14,6 +14,7 @@ in
   #################################
   home.packages = with pkgs; [
     # Apps
+    pkg-config
     zsh oh-my-zsh
     starship tmux
     keybase keybase-gui
