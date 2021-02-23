@@ -2,6 +2,7 @@
 aaron-bond.better-comments
 akamud.vscode-theme-onedark
 alefragnani.project-manager
+arrterian.nix-env-selector
 azemoh.one-monokai
 azemoh.theme-onedark
 bbenoist.Nix
@@ -33,6 +34,7 @@ jeff-hykin.better-shellscript-syntax
 jnoortheen.nix-ide
 jolaleye.horizon-theme-vscode
 jprestidge.theme-material-theme
+martinring.nix
 mhutchie.git-graph
 miguelsolorio.min-theme
 mikestead.dotenv
