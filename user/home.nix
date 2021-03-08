@@ -28,6 +28,7 @@ in
     jq
     zip unzip
     safeeyes
+    fprintd
     # Development
     vscode
     rustup
@@ -41,8 +42,6 @@ in
     gitlab-runner
     awscli2
     aws-okta
-    
-    qucs
   ];
 
   imports = [
