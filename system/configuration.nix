@@ -91,6 +91,8 @@ in
     ubuntu_font_family
     fira-code
     fira-code-symbols
+    anonymousPro
+    nanum-gothic-coding
   ];
 
   programs.dconf.enable = true;
