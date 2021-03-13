@@ -31,7 +31,10 @@ in
     fprintd
     # Development
     vscode
+    python3
+    python38Packages.pip
     rustup
+    go
     # Infrastructure tools
     kube3d
     kubectl
