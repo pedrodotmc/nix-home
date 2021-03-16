@@ -45,6 +45,7 @@ in
     gitlab-runner
     awscli2
     aws-okta
+    argocd
   ];
 
   imports = [
