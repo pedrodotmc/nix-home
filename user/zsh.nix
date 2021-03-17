@@ -24,7 +24,7 @@ in
     '';
     shellAliases = {
       tf = "terraform";
-      gcs = "git commit -S -s -e";
+      gcs = "git commit -S";
       cpbuff = "tmux show-buffer | xclip -sel clip -i";
       tmux_github = tmuxGitHub;
       tmux_work = tmuxWork;
