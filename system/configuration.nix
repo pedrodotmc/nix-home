@@ -77,6 +77,7 @@ in
     xclip
     gnome3.gnome-tweaks
     gnupg pinentry pinentry-gnome
+    usbutils
     # Development packages
     git git-crypt
     docker
