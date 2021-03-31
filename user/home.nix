@@ -29,6 +29,7 @@ in
     zip unzip
     safeeyes
     fprintd
+    dpkg debootstrap
     # Development
     vscode
     python3
