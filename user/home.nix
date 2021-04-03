@@ -29,7 +29,7 @@ in
     zip unzip
     safeeyes
     fprintd
-    dpkg debootstrap
+    gnome3.gnome-boxes
     # Development
     vscode
     python3
