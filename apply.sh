@@ -12,4 +12,4 @@ cp -l -f -r files/* ~/.config/nixpkgs/files
 home-manager switch
 
 # Install VSCode extensions
-xargs code --install-extension < files/vscode/extensions
+xargs -n1 code --install-extension < files/vscode/extensions
